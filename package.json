@@ -1,0 +1,35 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DaoThinh96/playwright#",
+  "author": "Thinh Dao",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^20.11.26",
+    "allure-commandline": "^2.29.0",
+    "allure-playwright": "^2.15.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "playwright": "^1.56.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "allure:generate": "allure generate ./test-output/allure-results --clean -o ./test-output/allure-report",
+    "allure-single-file:generate": "allure generate --single-file ./test-output/allure-results --clean -o ./test-output/allure-report",
+    "staging": "cross-env test_env=staging tenant=QRH npx playwright test tests/e2e/qrh --ui --grep @QRH @CI --trace on",
+    "prod": "cross-env test_env=production tenant=QRH npx playwright test tests/e2e/qrh --grep @QRH @CI",
+    "uat": "cross-env test_env=uat tenant=QRH npx playwright test tests/e2e/qrh --grep @QRH @CI",
+    "staging:api": "cross-env test_env=staging tenant=QRH npx playwright test tests/api/engine-api/package-api/flight",
+    "test": "npx playwright test --headed"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "csv-parse": "^5.5.6",
+    "dayjs": "^1.11.10",
+    "genson-js": "^0.0.8",
+    "util": "^0.12.5"
+  }
+}
