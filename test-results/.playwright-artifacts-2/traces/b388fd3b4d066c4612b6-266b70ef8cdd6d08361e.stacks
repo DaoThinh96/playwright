@@ -1,1 +1,0 @@
-{"files":["/Users/daothinh/Documents/playwright-senior-assessment/tests/ecommerce/ecommercePage.ts","/Users/daothinh/Documents/playwright-senior-assessment/tests/ecommerce/ecommerce.spec.ts"],"stacks":[[8,[[0,10,21,"EcommercePage.goto"],[1,10,15,""]]],[10,[[0,21,60,"EcommercePage.addProductToCart"],[1,13,15,""]]]]}

@@ -13,7 +13,7 @@ export default defineConfig({
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
-    baseURL: 'https://demo.playwright.dev',
+    baseURL: 'https://practicetestautomation.com/',
   },
   projects: [
     { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
