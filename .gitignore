@@ -1,3 +1,5 @@
 /node_modules
-./playwrigh-report
-./test-results
+playwright-report/
+test-results/
+test-output/
+allure-results/
