@@ -1,9 +1,9 @@
 {
-  "name": "playwright-senior-assessment",
+  "name": "playwright",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test": "playwright test",
+    "test:staging": "test_env=staging yarn playwright test",
     "test:headed": "playwright test --headed",
     "test:report": "playwright show-report"
   },

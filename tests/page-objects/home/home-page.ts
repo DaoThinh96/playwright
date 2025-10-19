@@ -18,8 +18,8 @@ export class HomePage extends BasePage{
 
   /* ============ Methods =============== */
 
-  async goto() {
-    await this.page.goto('/');
+  async goto(url: string) {
+    await this.page.goto(url);
   }
 
   async clickTabMenu(name: string) {
