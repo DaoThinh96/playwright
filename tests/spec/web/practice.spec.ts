@@ -1,9 +1,9 @@
 
 import { Browser, Page, chromium } from '@playwright/test';
-import { test } from '../fixtures/base-fixture';
+import { test } from '../../fixtures/base-fixture';
 import { BrowserType  } from 'playwright';
-import { LoginPage } from '../page-objects/login-page/login-page';
-import ENV from "../../helper/env-config";
+import { LoginPage } from '../../page-objects/login-page/login-page';
+import ENV from "../../../helper/env-config";
 
 test.describe('Verify practice page', () => {
 

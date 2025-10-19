@@ -32,11 +32,9 @@ export default defineConfig({
   workers: process.env.CI ? 2 : 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
-    ["html", { open: "never", outputFolder: "./test-output/html" }],
     ["line"],
     [
       "allure-playwright",
-      { detail: true, outputFolder: "./test-output/allure-results" },
     ],
   ],
   /* Register global setup script in the Playwright configuration file */
